@@ -1,0 +1,72 @@
+.ct1 {
+  width: 40.9vw;
+  max-width: 472px;
+  height: 100vh;
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  min-width: 50vh;
+}
+
+.ct2 {
+  margin-top: 5vh;
+  margin-left: 4vh;
+  text-align: left;
+}
+
+.txtInfo {
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.txtTitlo { 
+  margin-top: 32px;
+}
+
+.iptInfo1 {
+  width: 90%;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+.iptInfo2 {
+  width: 90%;
+  height: 32px;
+}
+
+.ctSenha {
+  margin-top: -3px;
+  display: inline;
+}
+
+.btnLogin {
+  inline-size: 92%;
+  height: 35px;
+  background-color: rgb(58, 48, 194);
+  color: rgb(255, 255, 255);
+  border-color: rgb(58, 48, 194);
+  border-radius: 3.5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.checkBox1 {
+  height: 38px;
+  width: 38px;
+  margin-left: -38px;
+}
+
+.checkBox2 {
+  height: 14px;
+  margin-top: 17px;
+  margin-right: 6px;
+}
+
+body {
+  background-color: rgb(58, 48, 194);
+}
