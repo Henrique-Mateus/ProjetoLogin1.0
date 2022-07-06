@@ -1,12 +1,11 @@
-import React from 'react'
+import axios from 'axios'
 
-export default props => {
-    const user = require('../../data/as.json')
-
-    return (
-        <div>
-            <p>{user.nome} esta modificado no email {user.email} com a senha {user.password}</p>
-            <h1>Esta funcionando</h1>
-        </div>
-    )
+function getUser() {
+    axios.get("http://144.22.188.2:5556/authentication/auth/getUser")
+    .then(response => {
+        console.log(response)
+    })
+    .catch(error => console.log(error))
 }
+
+export default getUser;

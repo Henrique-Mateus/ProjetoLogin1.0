@@ -9,19 +9,6 @@ export default props => {
 
     const Navegate = useNavigate()
 
-    const user = require('../../data/as.json')
-
-    function Cadastra() {
-        if (user.email === email || user.nome === nome) {
-            Navegate('Deu ruim :(')
-        }
-        else {
-            user.email = email
-            user.nome = nome
-            user.password = senha
-            Navegate('/Home')
-        }
-    }
 
     return (
         <div className='flex'>
@@ -43,7 +30,7 @@ export default props => {
                         </div>
                     </div>
                     <p>Ao se registrar, você concorda com os <Link to='/Registro'>Termos de Uso do Minia</Link></p>
-                    <button className='btnLogin' onClick={Cadastra}>Log In</button>
+                    <button className='btnLogin'>Log In</button>
                 </div>
                 <p>- Sign in with -</p>
                 <p>Já tem uma conta? <Link to='/'>Log In agora</Link></p>

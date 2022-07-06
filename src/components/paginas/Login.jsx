@@ -1,23 +1,11 @@
 import '../../styles/TelasIniciais.css'
 import { Link, useNavigate } from 'react-router-dom'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 export default props => {
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
-
     const Navegate = useNavigate()
-
-    const user = require('../../data/as.json')
-
-    function Login() {
-        if (user.email === email && user.password === senha) {
-            Navegate('/Home')
-        }
-        else {
-            Navegate('ta fucionando')
-        }
-    }
 
     return (
         <div className='flex'>
@@ -40,7 +28,7 @@ export default props => {
                         <button className='checkBox2'></button>
                         <p> Remember me</p>
                     </div>
-                    <button className='btnLogin' onClick={Login}>Log In</button>
+                    <button className='btnLogin' to="/Home">Log In</button>
                 </div>
                 <p>- Sign in with -</p>
                 <p>Não tem uma conta? <Link to='/Registro'>Inscreva-se agora</Link></p>
